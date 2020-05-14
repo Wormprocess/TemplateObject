@@ -1,0 +1,22 @@
+//
+//  PrefixHeader.pch
+//  TemplateObject
+//
+//  Created by 海啸 on 2020/5/14.
+//  Copyright © 2020 海啸. All rights reserved.
+//
+
+#ifndef PrefixHeader_pch
+#define PrefixHeader_pch
+
+#ifdef  __OBJC__
+
+#import <UIKit/UIKit.h>
+#import <Foundation/Foundation.h>
+
+#import "CommonMacro.h"
+#import "AppCommonTools.h"
+
+#endif
+
+#endif /* PrefixHeader_pch */
