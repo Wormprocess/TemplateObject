@@ -2,12 +2,12 @@
 //  AppDelegate.m
 //  TemplateObject
 //
-//  Created by 海啸 on 2020/5/14.
+//  Created by Worm on 2020/5/14.
 //  Copyright © 2020 海啸. All rights reserved.
 //
 
 #import "AppDelegate.h"
-#import "HomeViewController.h"
+#import "BaseTabbarController.h"
 
 @interface AppDelegate ()
 
@@ -20,8 +20,9 @@
 
     self.window = [[UIWindow alloc]initWithFrame:[UIScreen mainScreen].bounds];
     self.window.backgroundColor = [UIColor whiteColor];
-    HomeViewController * vc = [[HomeViewController alloc]init];
-    self.window.rootViewController = [[UINavigationController alloc]initWithRootViewController:vc];
+    
+    BaseTabbarController * vc = [[BaseTabbarController alloc]init];
+    self.window.rootViewController = vc;
     
     [self.window makeKeyAndVisible];
     return YES;

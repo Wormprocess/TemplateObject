@@ -2,7 +2,7 @@
 //  BaseTableController.h
 //  TemplateObject
 //
-//  Created by 海啸 on 2020/5/14.
+//  Created by Worm on 2020/5/14.
 //  Copyright © 2020 海啸. All rights reserved.
 //  普通一屏列表基类
 
@@ -10,7 +10,12 @@
 
 NS_ASSUME_NONNULL_BEGIN
 
-@interface BaseTableController : BaseViewController
+@interface BaseTableController : BaseViewController<UITableViewDelegate,UITableViewDataSource>
+
+@property(nonatomic, strong) UITableView *tableView;
+///重新此方法 UITableViewStyle
+- (UITableViewStyle)getTableStyle;
+- (void)layoutTableView;
 
 @end
 

@@ -2,7 +2,7 @@
 //  BaseTableCell.m
 //  TemplateObject
 //
-//  Created by 海啸 on 2020/5/14.
+//  Created by Worm on 2020/5/14.
 //  Copyright © 2020 海啸. All rights reserved.
 //
 
