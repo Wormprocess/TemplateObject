@@ -10,11 +10,14 @@ import UIKit
 
 class ViewController: UIViewController {
 
+    var model:HXModel?
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view.
+        model = HXModel.init()
+        model?.age = 1
+        print(model?.age ?? "")
     }
-
-
 }
 
